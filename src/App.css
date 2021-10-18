@@ -1,0 +1,4 @@
+.conteudos {
+    display: flex;
+    flex-direction: row;
+}

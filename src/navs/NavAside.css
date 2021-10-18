@@ -1,0 +1,33 @@
+.nav {
+    width: 30%;
+    height: 250vh;
+    background-color: #777777;
+    display: block;
+}
+.h1nav {
+    color: #fff;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-left: 15px;
+
+}
+ a {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 30px;
+}
+.estilo {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 15px;
+}
+a:hover {
+    margin-top: 0px;
+    color: brown;
+    background-color: brown;
+}
+.estilo:hover {
+    color: #fff;
+    
+}
