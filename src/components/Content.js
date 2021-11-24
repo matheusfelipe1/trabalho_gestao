@@ -36,11 +36,11 @@ export default class Content extends Component {
                         <div className='width'>
                             <div className='dados rows'>
                                 <label htmlFor='cpf'>CPF:</label>
-                                <input id='cpf' className='form-control' placeholder='Digite seu CPF' type='number' />
+                                <input id='cpf' name=''  className='form-control' placeholder='Digite seu CPF' type='number' />
                             </div>
                             <div className='dados rows'>
                                 <label htmlFor='rg' >RG:</label>
-                                <input id='rg' className='form-control' placeholder='Digite seu RG' type='number' />
+                                <input id='rg' name='rg'  className='form-control' placeholder='Digite seu RG' type='number' />
                             </div>
                             
                             
@@ -49,11 +49,11 @@ export default class Content extends Component {
                         <div className='width'>
                             <div className='dados rows'>
                                 <label htmlFor='matricula'>Matricula:</label>
-                                <input id='matricula' className='form-control'  placeholder='Digite sua matricula' type='number'  />
+                                <input id='matricula' name='matricula'  className='form-control'  placeholder='Digite sua matricula' type='number'  />
                             </div>
                             <div className='dados rows'>
                                 <label htmlFor='celular'>Celular:</label>
-                                <input id='celular' className='form-control'  placeholder='Ex.: (99) 99999 - 9999' type='number'  />
+                                <input id='celular' name='celular'  className='form-control'  placeholder='Ex.: (99) 99999 - 9999' type='number'  />
                             </div>
                         </div>
                     
@@ -61,38 +61,42 @@ export default class Content extends Component {
                         <h2>Endereço</h2>
                         <div className='dados'>
                             <label htmlFor='logradouro' >Logradouro:</label>
-                            <input id='logradouro' className='form-control' placeholder='Ex.: Avenida Brasil' type='text' />
+                            <input id='logradouro' name='logradouro'  className='form-control' placeholder='Ex.: Avenida Brasil' type='text' />
                         </div>
                         <div className='dados'>
                             <label htmlFor='cidade' >Cidade:</label>
-                            <input id='cidade' className='form-control' placeholder='Ex.: Belo Horizonte' type='text' />
+                            <input id='cidade' name='cidade'  className='form-control' placeholder='Ex.: Belo Horizonte' type='text' />
+                        </div>
+                        <div className='dados'>
+                            <label htmlFor='bairro' >Bairro:</label>
+                            <input id='bairro' name='bairro'  className='form-control' placeholder='Informe seu bairro' type='text' />
                         </div>
                         <div className='dados'>
                             <label htmlFor='estado' >Estado:</label>
-                            <input id='estado' className='form-control' placeholder='Ex.: Minas Gerais' type='text' />
+                            <input id='estado' name='estado'  className='form-control' placeholder='Ex.: Minas Gerais' type='text' />
                         </div>
                         <div className='dados'>
                             <label htmlFor='numero' >Numero:</label>
-                            <input id='numero' className='form-control' placeholder='Informe o numero do seu endereço' type='text' />
+                            <input id='numero' name='numero'  className='form-control' placeholder='Informe o numero do seu endereço' type='text' />
                         </div>
                         <div className='dados'>
                             <label htmlFor='complemento' >Complemento:</label>
-                            <input id='complemento' className='form-control' placeholder='Ex.: Casa b' type='text' />
+                            <input id='complemento' name='complemento'  className='form-control' placeholder='Ex.: Casa b' type='text' />
                         </div>
                         <hr className='hr' />
                         <h2>Dados da Empresa</h2>
                         <div className='dados'>
                             <label htmlFor='locacao'>Locaçao:</label>
-                            <input id='locacao' className='form-control' placeholder='Informe a area que atua. Ex.: Mecanico' type='text' />
+                            <input id='locacao' name='locacao'  className='form-control' placeholder='Informe a area que atua. Ex.: Mecanico' type='text' />
                         </div>
                         <div className='width'>
                             <div className='dados rows'>
                                 <label htmlFor='filial'>Filial:</label>
-                                <input id='filial' className='form-control' placeholder='Informe a sua Filial' type='text' />
+                                <input id='filial' className='form-control' name='filial'  placeholder='Informe a sua Filial' type='text' />
                             </div>
                             <div className='dados rows'>
                                 <label htmlFor='tipo'>Tipo de Contrato:</label>
-                                <input id='tipo' className='form-control' placeholder=' Ex.: Pessoa Juridica, CLT, Estagiario ou etc...' type='text' />
+                                <input id='tipo' className='form-control' name='contrato'  placeholder=' Ex.: Pessoa Juridica, CLT, Estagiario ou etc...' type='text' />
                             </div>
                         </div>
                         <hr className='hr' />
@@ -100,7 +104,7 @@ export default class Content extends Component {
                         <div className='width2'>
                             <div className='dados check'>
                                 <label htmlFor='oculos' className='labelT'>Oculos de proteçao:</label>
-                                <input id='oculos' className='form-control' placeholder='Informe seu nome' type='checkbox' />
+                                <input id='oculos' name='oculos'  className='form-control' placeholder='Informe seu nome' type='checkbox' />
                             </div>
                             <div className='dados check'>
                                 <label htmlFor='capacete' className='labelT' >Capacete:</label>
@@ -108,38 +112,38 @@ export default class Content extends Component {
                             </div>
                             <div className='dados check'>
                                 <label htmlFor='protetor' className='labelT' >Protetor e Abafador Auricular:</label>
-                                <input id='protetor' className='form-control' placeholder='Informe seu nome' type='checkbox' />
+                                <input id='protetor' className='form-control' name='protetor'  placeholder='Informe seu nome' type='checkbox' />
                             </div>
                         </div>
                     <div className='width2'>
                             <div className='dados check'>
                                 <label htmlFor='mascara' className='labelT' >Mascara respiratoria:</label>
-                                <input id='mascara' className='form-control' placeholder='Informe seu nome' type='checkbox' />
+                                <input id='mascara' className='form-control' name='mascara'  placeholder='Informe seu nome' type='checkbox' />
                             </div>
                             <div className='dados check'>
                                 <label htmlFor='cinto' className='labelT' >Cinto de Segurança:</label>
-                                <input id='cinto' className='form-control' placeholder='Informe seu nome' type='checkbox' />
+                                <input id='cinto' className='form-control' name='cinto'  placeholder='Informe seu nome' type='checkbox' />
                             </div>
                             <div className='dados check'>
                                 <label htmlFor='luvas' className='labelT' >Luvas de Proteçao:</label>
-                                <input id='luvas' className='form-control' placeholder='Informe seu nome' type='checkbox' />
+                                <input id='luvas' className='form-control' name='luvas'  placeholder='Informe seu nome' type='checkbox' />
                             </div>
                     </div>
                     <div className='width2 '>
                             <div className='dados check '>
                                 <label htmlFor='talabate' className='labelT' >Talabarte:</label>
-                                <input id='talabate' className='form-control' placeholder='Informe seu nome' type='checkbox' />
+                                <input id='talabate' className='form-control' name='talabarte' placeholder='Informe seu nome' type='checkbox' />
                             </div>
                             <div className='dados check'>
                                 <label htmlFor='sapato' className='labelT' >Sapato:</label>
-                                <input id='sapato' className='form-control' placeholder='Informe seu nome' type='checkbox' />
+                                <input id='sapato' className='form-control' name='sapato' placeholder='Informe seu nome' type='checkbox' />
                             </div>
                     </div>
                     <hr className='hr' />
                     <h2>Destinatario</h2>
                     <div className='dados'>
                         <label htmlFor='email-d'>Email:</label>
-                        <input id='email-d' className='form-control' placeholder='Informe do destinatario.' type='search' name='destino' />
+                        <input id='email-d' className='form-control' placeholder='Informe o email do destinatario.' type='search' name='destino' />
                     </div>
                     <hr className='hr' />
                     <div className='width'>
